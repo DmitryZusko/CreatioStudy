@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "dc5555be-ce41-4dbd-bbcb-0f640c1f1585",
+    "Name": "GenRealtySection",
+    "ModifiedOnUtc": "\/Date(1688496693000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Section"
+  }
+}

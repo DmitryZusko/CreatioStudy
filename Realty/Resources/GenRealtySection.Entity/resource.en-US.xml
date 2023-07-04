@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty Section" />
+			<Item Name="Columns.GenArea.Caption" Value="Area, sq m" />
+			<Item Name="Columns.GenComment.Caption" Value="Comment" />
+			<Item Name="Columns.GenName.Caption" Value="Name" />
+			<Item Name="Columns.GenNotes.Caption" Value="Notes" />
+			<Item Name="Columns.GenOfferType.Caption" Value="Offer Type" />
+			<Item Name="Columns.GenPrice.Caption" Value="Price, USD" />
+			<Item Name="Columns.GenType.Caption" Value="Type" />
+		</Items>
+	</Group>
+</Resources>

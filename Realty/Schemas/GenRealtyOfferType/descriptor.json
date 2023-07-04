@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "23da65b3-7374-41f5-9241-9e636459ec32",
+    "Name": "GenRealtyOfferType",
+    "ModifiedOnUtc": "\/Date(1688496326000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Offer Type"
+  }
+}

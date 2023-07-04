@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "061155bc-2da6-4eb0-a8aa-d97601105b3a",
+    "Name": "GenRealtySectionFolder",
+    "ModifiedOnUtc": "\/Date(1688496333000)\/",
+    "Parent": {
+      "UId": "d602bf96-d029-4b07-9755-63c8f5cb5ed5",
+      "Name": "BaseFolder"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty folder"
+  }
+}
