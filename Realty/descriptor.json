@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "682e5890-00ca-e923-d553-2340ff75f32b",
+    "Name": "Realty",
+    "ModifiedOnUtc": "\/Date(1688483714000)\/",
+    "Maintainer": "CRMGenesis",
+    "DependsOn": [
+      {
+        "UId": "d7559847-f38e-410c-baee-6f43bbe80d42",
+        "PackageVersion": "7.8.0",
+        "Name": "SalesEnterpriseSoftkey_ENU"
+      }
+    ]
+  }
+}
