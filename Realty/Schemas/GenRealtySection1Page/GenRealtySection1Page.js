@@ -1,7 +1,12 @@
-define("GenRealtySection1Page", [], function() {
+define("GenRealtySection1Page", ["RightUtilities"], function(RightUtilities) {
 	return {
 		entitySchemaName: "GenRealtySection",
-		attributes: {},
+		attributes: {
+			"isCanChangeRealtyPrice": {
+				"dataValueType": this.Terrasoft.DataValueType.BOOLEAN,
+				"value": false,
+			}
+		},
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		details: /**SCHEMA_DETAILS*/{
 			"Files": {
@@ -11,10 +16,86 @@ define("GenRealtySection1Page", [], function() {
 					"masterColumn": "Id",
 					"detailColumn": "GenRealtySection"
 				}
+			},
+			"GenRealtyViewsDetailScheme": {
+				"schemaName": "GenSchema1dd1640cDetail",
+				"entitySchemaName": "GenRealtyViews",
+				"filter": {
+					"detailColumn": "GenRealtySection",
+					"masterColumn": "Id"
+				}
 			}
 		}/**SCHEMA_DETAILS*/,
-		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
-		methods: {},
+		businessRules: /**SCHEMA_BUSINESS_RULES*/{
+			"GenComment": {
+				"5215578e-f99c-42c1-9a54-9e5d0b628f0b": {
+					"uId": "5215578e-f99c-42c1-9a54-9e5d0b628f0b",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 7,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "GenPrice"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": 1000,
+								"dataValueType": 5
+							}
+						}
+					]
+				}
+			},
+			"GenPrice": {
+				"a5a00d63-2723-4265-81b2-9c2a88451dde": {
+					"uId": "a5a00d63-2723-4265-81b2-9c2a88451dde",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 1,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 3,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "isCanChangeRealtyPrice"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": true,
+								"dataValueType": 12
+							}
+						}
+					]
+				}
+			}
+		}/**SCHEMA_BUSINESS_RULES*/,
+		methods: {
+			onEntityEnitialized: function() {
+				this.callParent(argument);
+				this.setSecurityAttribute();
+			},
+			setSecurityAttribute: function(){
+				RightUtilities.checkCanExecuteOperation({
+					operation:"CanChangeRealtyPrice"
+				}, this.getPriceOperationResult, this);
+			},
+			getPriceOperationResult: function(result){
+				this.set("isCanChangeRealtyPrice", result);
+			},
+			handleClickMeButtonClick: function() {
+				this.console.log(this.get("GenName")?.length > 3 ? true : false);
+			},
+			isClickMeButtonEnabled: function(){
+				return this.get("GenName")?.length > 3 ? true : false;
+			}
+		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{
@@ -70,6 +151,33 @@ define("GenRealtySection1Page", [], function() {
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "ClickMeButton",
+				"values": {
+					"itemType": 5,
+					"caption": {
+						"bindTo": "Resources.Strings.GenClickMeButtonCaption"
+					},
+					"click": {
+						"bindTo": "handleClickMeButtonClick"
+					},
+					"enabled": {
+						"bindTo": "isClickMeButtonEnabled"
+					},
+					"style": "green",
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "ProfileContainer"
+					}
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -130,10 +238,10 @@ define("GenRealtySection1Page", [], function() {
 			},
 			{
 				"operation": "insert",
-				"name": "NotesAndFilesTab",
+				"name": "GenViewsTab",
 				"values": {
 					"caption": {
-						"bindTo": "Resources.Strings.NotesAndFilesTabCaption"
+						"bindTo": "Resources.Strings.GenViewsTabTabCaption"
 					},
 					"items": [],
 					"order": 0
@@ -141,6 +249,31 @@ define("GenRealtySection1Page", [], function() {
 				"parentName": "Tabs",
 				"propertyName": "tabs",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GenRealtyViewsDetailScheme",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "GenViewsTab",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NotesAndFilesTab",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.NotesAndFilesTabCaption"
+					},
+					"items": [],
+					"order": 1
+				},
+				"parentName": "Tabs",
+				"propertyName": "tabs",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -198,7 +331,7 @@ define("GenRealtySection1Page", [], function() {
 				"operation": "merge",
 				"name": "ESNTab",
 				"values": {
-					"order": 1
+					"order": 2
 				}
 			}
 		]/**SCHEMA_DIFF*/

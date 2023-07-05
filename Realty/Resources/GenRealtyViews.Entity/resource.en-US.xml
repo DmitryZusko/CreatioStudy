@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="View" />
+			<Item Name="Columns.GenComment.Caption" Value="Comment" />
+			<Item Name="Columns.GenCustomer.Caption" Value="Client" />
+			<Item Name="Columns.GenDatetime.Caption" Value="View DateTime" />
+			<Item Name="Columns.GenManager.Caption" Value="Manager" />
+			<Item Name="Columns.GenName.Caption" Value="Name" />
+			<Item Name="Columns.GenRealtySection.Caption" Value="Realty" />
+		</Items>
+	</Group>
+</Resources>

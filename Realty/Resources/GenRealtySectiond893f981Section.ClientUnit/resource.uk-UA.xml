@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Section schema: &quot;Realty&quot;" />
+			<Item Name="LocalizableStrings.Caption.Value" Value="Нерухомість" />
 		</Items>
 	</Group>
 </Resources>

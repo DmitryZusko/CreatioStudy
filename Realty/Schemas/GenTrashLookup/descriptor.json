@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "de93c00f-1fc6-454b-9495-3f0f1cfb5aad",
+    "Name": "GenTrashLookup",
+    "ModifiedOnUtc": "\/Date(1688565459000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Trash Lookup"
+  }
+}

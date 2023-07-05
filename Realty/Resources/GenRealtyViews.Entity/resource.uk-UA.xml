@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uk-UA">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Перегляд" />
+			<Item Name="Columns.GenComment.Caption" Value="Коментар" />
+			<Item Name="Columns.GenCustomer.Caption" Value="Клієнт" />
+			<Item Name="Columns.GenDatetime.Caption" Value="Дата Перегляду" />
+			<Item Name="Columns.GenName.Caption" Value="Назва" />
+			<Item Name="Columns.GenRealtySection.Caption" Value="Нерухомість" />
+		</Items>
+	</Group>
+</Resources>

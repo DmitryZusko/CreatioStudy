@@ -3,6 +3,9 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Edit page: &quot;Realty&quot;" />
+			<Item Name="LocalizableStrings.GenClickMeButtonCaption.Value" Value="Клікни!" />
+			<Item Name="LocalizableStrings.GenRealtyViewsDetailSchemeDetailCaptionOnPage.Value" Value="Перегляд" />
+			<Item Name="LocalizableStrings.GenViewsTabTabCaption.Value" Value="Перегляди" />
 		</Items>
 	</Group>
 </Resources>

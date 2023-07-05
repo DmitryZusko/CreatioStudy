@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "8ed0b7ea-af36-4a04-9100-9cc7e7630ce4",
+    "Name": "GenRealtyViews",
+    "ModifiedOnUtc": "\/Date(1688556516000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "View"
+  }
+}
