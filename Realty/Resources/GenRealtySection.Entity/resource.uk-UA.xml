@@ -2,8 +2,14 @@
 <Resources Culture="uk-UA">
 	<Group Type="String">
 		<Items>
+			<Item Name="Caption" Value="Розділ Нерухомості" />
+			<Item Name="Columns.GenArea.Caption" Value="Площа, кв м" />
+			<Item Name="Columns.GenComment.Caption" Value="Коментар" />
 			<Item Name="Columns.GenName.Caption" Value="Назва" />
 			<Item Name="Columns.GenNotes.Caption" Value="Нотатки" />
+			<Item Name="Columns.GenOfferType.Caption" Value="Тип Пропозиції" />
+			<Item Name="Columns.GenPrice.Caption" Value="Ціна, USD" />
+			<Item Name="Columns.GenType.Caption" Value="Тип" />
 		</Items>
 	</Group>
 </Resources>

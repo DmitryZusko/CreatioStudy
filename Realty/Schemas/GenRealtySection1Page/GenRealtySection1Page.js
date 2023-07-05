@@ -114,7 +114,7 @@ define("GenRealtySection1Page", [], function() {
 				"name": "STRINGcb8305bd-2f67-4661-98f4-937c862ff29b",
 				"values": {
 					"layout": {
-						"colSpan": 20,
+						"colSpan": 24,
 						"rowSpan": 2,
 						"column": 0,
 						"row": 1,

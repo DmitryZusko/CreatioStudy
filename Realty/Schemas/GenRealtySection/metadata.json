@@ -65,6 +65,10 @@
   "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
   "S4": "fbbfd701-8be4-4bf7-bb84-5ada8ef144e8",
   "E6": true,
+  "E12": {
+    "FB1": 1,
+    "FB2": "eb8be647-6e96-42e8-8952-726dba75683c"
+  },
   "E17": "GenTypeId",
   "E18": "GenTypeName"
 }
@@ -78,6 +82,10 @@
   "S4": "23da65b3-7374-41f5-9241-9e636459ec32",
   "E6": true,
   "E20": true,
+  "E12": {
+    "FB1": 1,
+    "FB2": "08ad4f17-e16c-4ec4-8ebd-85520618ef0b"
+  },
   "E17": "GenOfferTypeId",
   "E18": "GenOfferTypeName"
 }
