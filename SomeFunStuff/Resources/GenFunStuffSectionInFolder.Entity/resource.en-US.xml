@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Fun Stuff in Folder" />
+			<Item Name="Columns.Folder.Caption" Value="Fun Stuff folder" />
+			<Item Name="Columns.GenFunStuffSection.Caption" Value="Fun Stuff" />
+		</Items>
+	</Group>
+</Resources>

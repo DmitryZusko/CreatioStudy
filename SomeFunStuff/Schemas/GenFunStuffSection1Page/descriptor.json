@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "21ea72d5-14a0-4f56-b346-d7c29cd9b1eb",
+    "Name": "GenFunStuffSection1Page",
+    "ModifiedOnUtc": "\/Date(1688575740000)\/",
+    "Parent": {
+      "UId": "d62293c0-7f14-44b1-b547-735fb40499cd",
+      "Name": "BaseModulePageV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Edit page: \"Fun Stuff\""
+  }
+}

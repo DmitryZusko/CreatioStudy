@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Fun Stuff" />
+			<Item Name="Columns.GenFirstNumber.Caption" Value="First Number" />
+			<Item Name="Columns.GenName.Caption" Value="Name" />
+			<Item Name="Columns.GenResult.Caption" Value="Result" />
+			<Item Name="Columns.GenSecondNumber.Caption" Value="Second Number" />
+		</Items>
+	</Group>
+</Resources>

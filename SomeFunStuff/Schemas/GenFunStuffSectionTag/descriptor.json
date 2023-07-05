@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "bb6fb711-5bd5-4160-a598-045737c2a539",
+    "Name": "GenFunStuffSectionTag",
+    "ModifiedOnUtc": "\/Date(1688569324000)\/",
+    "Parent": {
+      "UId": "9e3f203c-e905-4de5-9468-335b193f2439",
+      "Name": "BaseTag"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Fun Stuff section tag",
+    "DependsOn": []
+  }
+}
