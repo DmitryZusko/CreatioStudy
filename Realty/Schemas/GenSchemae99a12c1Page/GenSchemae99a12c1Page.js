@@ -4,7 +4,23 @@ define("GenSchemae99a12c1Page", [], function() {
 		attributes: {},
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		details: /**SCHEMA_DETAILS*/{}/**SCHEMA_DETAILS*/,
-		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
+		businessRules: /**SCHEMA_BUSINESS_RULES*/{
+			"GenManager": {
+				"957e6789-ee69-4cb9-9ecb-12824323e90f": {
+					"uId": "957e6789-ee69-4cb9-9ecb-12824323e90f",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 1,
+					"baseAttributePatch": "Type",
+					"comparisonType": 3,
+					"autoClean": false,
+					"autocomplete": false,
+					"type": 0,
+					"value": "60733efc-f36b-1410-a883-16d83cab0980",
+					"dataValueType": 10
+				}
+			}
+		}/**SCHEMA_BUSINESS_RULES*/,
 		methods: {},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[

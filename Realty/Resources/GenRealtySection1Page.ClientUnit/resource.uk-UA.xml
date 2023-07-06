@@ -4,6 +4,8 @@
 		<Items>
 			<Item Name="Caption" Value="Edit page: &quot;Realty&quot;" />
 			<Item Name="LocalizableStrings.GenClickMeButtonCaption.Value" Value="Клікни!" />
+			<Item Name="LocalizableStrings.GenCommisionCaption.Value" Value="Комісія, USD" />
+			<Item Name="LocalizableStrings.GenNegativeNumberError.Value" Value="Значення має бути рівним або більше 0" />
 			<Item Name="LocalizableStrings.GenRealtyViewsDetailSchemeDetailCaptionOnPage.Value" Value="Перегляд" />
 			<Item Name="LocalizableStrings.GenViewsTabTabCaption.Value" Value="Перегляди" />
 		</Items>

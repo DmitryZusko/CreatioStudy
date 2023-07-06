@@ -4,6 +4,8 @@
 		<Items>
 			<Item Name="Caption" Value="Edit page: &quot;Realty&quot;" />
 			<Item Name="LocalizableStrings.GenClickMeButtonCaption.Value" Value="Click Me!" />
+			<Item Name="LocalizableStrings.GenCommisionCaption.Value" Value="Commission, USD" />
+			<Item Name="LocalizableStrings.GenNegativeNumberError.Value" Value="Value should be equal or greater that 0" />
 			<Item Name="LocalizableStrings.GenRealtyViewsDetailSchemeDetailCaptionOnPage.Value" Value="View" />
 			<Item Name="LocalizableStrings.GenViewsTabTabCaption.Value" Value="Views" />
 		</Items>

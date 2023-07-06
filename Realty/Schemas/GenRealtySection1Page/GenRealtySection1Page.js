@@ -5,6 +5,20 @@ define("GenRealtySection1Page", ["RightUtilities"], function(RightUtilities) {
 			"isCanChangeRealtyPrice": {
 				"dataValueType": this.Terrasoft.DataValueType.BOOLEAN,
 				"value": false,
+			},
+			"commission": {
+				"type": this.Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+				"dataValueType": this.Terrasoft.DataValueType.FLOAT,
+				"value": 0.0,
+				"dependencies": [{
+					"columns": ["GenPrice", "GenOfferType"],
+					"methodName": "calculateCommissiomAmount",
+			}],
+			},
+			"GenOfferType": {
+				"lookupListConfig": {
+					"columns": ["GenCommisionPercent"],
+				}
 			}
 		},
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
@@ -77,9 +91,15 @@ define("GenRealtySection1Page", ["RightUtilities"], function(RightUtilities) {
 			}
 		}/**SCHEMA_BUSINESS_RULES*/,
 		methods: {
-			onEntityEnitialized: function() {
+			setValidationConfig: function(){
+				this.callParent(arguments);
+				this.addColumnValidator("GenPrice", this.positiveNumberValidator);
+				this.addColumnValidator("GenArea", this.positiveNumberValidator);
+			},
+			onEntityInitialized: function(argument) {
 				this.callParent(argument);
-				this.setSecurityAttribute();
+				this.setSecurityAttribute(); 
+				this.calculateCommissiomAmount();
 			},
 			setSecurityAttribute: function(){
 				RightUtilities.checkCanExecuteOperation({
@@ -94,7 +114,20 @@ define("GenRealtySection1Page", ["RightUtilities"], function(RightUtilities) {
 			},
 			isClickMeButtonEnabled: function(){
 				return this.get("GenName")?.length > 3 ? true : false;
-			}
+			},
+			calculateCommissiomAmount: function(){
+				if(!this.get("GenPrice") && this.get("GenOfferType")) return;
+				
+				this.console.log(this.get("GenOfferType"));
+				this.console.log(this.get("GenPrice"));
+				
+				this.set("commission", this.get("GenOfferType").GenCommisionPercent * this.get("GenPrice") / 100);
+			},
+			positiveNumberValidator: function(value, column) {
+				return {
+					invalidMessage: value > 0 ? "" : this.get("Resources.Strings.GenNegativeNumberError"),
+				};
+			},
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
@@ -171,13 +204,32 @@ define("GenRealtySection1Page", ["RightUtilities"], function(RightUtilities) {
 						"colSpan": 24,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 3,
+						"row": 4,
 						"layoutName": "ProfileContainer"
 					}
 				},
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
 				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "CommissionField",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "ProfileContainer"
+					},
+					"bindTo": "commission",
+					"enabled": false,
+					"caption": {bindTo: "Resources.Strings.GenCommisionCaption"}
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 4
 			},
 			{
 				"operation": "insert",
