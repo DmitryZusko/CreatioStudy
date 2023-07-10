@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "970126e5-7c50-4462-96a2-5405b197a331",
+    "Name": "GenClientUnit_b5f6ff4",
+    "ModifiedOnUtc": "\/Date(1688719900000)\/",
+    "Parent": {
+      "UId": "5826ff24-46c6-4169-9223-2aaad9ec2e18",
+      "Name": "BasePageSimpleProcessTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Calculated Average Price Page"
+  }
+}

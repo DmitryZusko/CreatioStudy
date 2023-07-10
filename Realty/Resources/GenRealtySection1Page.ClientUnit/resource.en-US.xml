@@ -7,6 +7,7 @@
 			<Item Name="LocalizableStrings.GenCommisionCaption.Value" Value="Commission, USD" />
 			<Item Name="LocalizableStrings.GenNegativeNumberError.Value" Value="Value should be equal or greater that 0" />
 			<Item Name="LocalizableStrings.GenRealtyViewsDetailSchemeDetailCaptionOnPage.Value" Value="View" />
+			<Item Name="LocalizableStrings.GenRunServiceButtonCuption.Value" Value="Run Service" />
 			<Item Name="LocalizableStrings.GenViewsTabTabCaption.Value" Value="Views" />
 		</Items>
 	</Group>

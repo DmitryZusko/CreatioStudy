@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uk-UA">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty Event Listener" />
+			<Item Name="LocalizableStrings.GenTooBigValueMsg.Value" Value="Значення має бути менше {0}" />
+		</Items>
+	</Group>
+</Resources>

@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Fun Stuff" />
 			<Item Name="Columns.GenFirstNumber.Caption" Value="First Number" />
+			<Item Name="Columns.GenIdentityNumber.Caption" Value="№" />
 			<Item Name="Columns.GenName.Caption" Value="Name" />
 			<Item Name="Columns.GenResult.Caption" Value="Result" />
 			<Item Name="Columns.GenSecondNumber.Caption" Value="Second Number" />

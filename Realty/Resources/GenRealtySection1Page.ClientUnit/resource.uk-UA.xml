@@ -7,6 +7,7 @@
 			<Item Name="LocalizableStrings.GenCommisionCaption.Value" Value="Комісія, USD" />
 			<Item Name="LocalizableStrings.GenNegativeNumberError.Value" Value="Значення має бути рівним або більше 0" />
 			<Item Name="LocalizableStrings.GenRealtyViewsDetailSchemeDetailCaptionOnPage.Value" Value="Перегляд" />
+			<Item Name="LocalizableStrings.GenRunServiceButtonCuption.Value" Value="Запустити Сервіс" />
 			<Item Name="LocalizableStrings.GenViewsTabTabCaption.Value" Value="Перегляди" />
 		</Items>
 	</Group>

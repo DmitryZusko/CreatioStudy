@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ar-SA">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.GenGenFunStuffSection.Caption" Value="الكائن الأساسي" />
+			<Item Name="EventsProcessSchema.Caption" Value="العملية" />
+		</Items>
+	</Group>
+</Resources>

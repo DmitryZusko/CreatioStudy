@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "b06df238-f731-40f8-b515-360f9a708b98",
+    "Name": "GenCalcAveragePriceProcessRealty1",
+    "ModifiedOnUtc": "\/Date(1688719922000)\/",
+    "Parent": {
+      "UId": "67e69dd2-1ebe-4d0a-a93b-40a4ce5a3d7f",
+      "Name": "GenCalcAveragePriceProcess"
+    },
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Calc Average Price Process"
+  }
+}

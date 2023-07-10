@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uk-UA">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Calculated Average Price Page" />
+			<Item Name="Parameters.4e265107-4b21-4031-b15b-408f8d4aaf0f.Caption" Value="Середня Вартістьб USD/кв м" />
+		</Items>
+	</Group>
+</Resources>

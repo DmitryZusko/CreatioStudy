@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "67e69dd2-1ebe-4d0a-a93b-40a4ce5a3d7f",
+    "Name": "GenCalcAveragePriceProcess",
+    "ModifiedOnUtc": "\/Date(1688716789000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Calc Average Price Process"
+  }
+}
